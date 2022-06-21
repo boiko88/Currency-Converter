@@ -21,9 +21,9 @@ def main():
 
         def init_UI(self):
             self.setWindowIcon(QIcon("logo3.png"))
-            self.ui.amountInput.setPlaceholderText("I have now")
+            self.ui.amountInput.setPlaceholderText("I have")
             self.ui.currencyInput.setPlaceholderText("In currency")
-            self.ui.amountOutput.setPlaceholderText("I will get")
+            self.ui.amountOutput.setPlaceholderText("I get")
             self.ui.currencyOutput.setPlaceholderText("In currency")
             self.ui.pushButton.clicked.connect(self.converter)
 

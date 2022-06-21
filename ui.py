@@ -53,9 +53,9 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.amountInput.setFont(font)
         self.amountInput.setStyleSheet("background-color: #3E6FE7;\n"
-"border: 2px solid #3E2FA7;\n"
-"border-radius: 22px;\n"
-"color: white;")
+                                       "border: 2px solid #3E2FA7;\n"
+                                       "border-radius: 22px;\n"
+                                       "color: white;")
         self.amountInput.setText("")
         self.amountInput.setAlignment(QtCore.Qt.AlignCenter)
         self.amountInput.setObjectName("amountInput")
@@ -65,21 +65,21 @@ class Ui_MainWindow(object):
         font.setPointSize(26)
         self.pushButton.setFont(font)
         self.pushButton.setStyleSheet("QPushButton {\n"
-"background-color: #3E6FE7;\n"
-"border: 2px solid #3E2FA7;\n"
-"border-radius: 22px;\n"
-"color: white;\n"
-"}\n"
-"QPushButton: pressed{\n"
-"    background_color: #330099\n"
-"}\n"
-"\n"
-"*:hover{\n"
-"            background: \'#4663AB\n"
-"\';\n"
-"        }")
+                                      "background-color: #3E6FE7;\n"
+                                      "border: 2px solid #3E2FA7;\n"
+                                      "border-radius: 22px;\n"
+                                      "color: white;\n"
+                                      "}\n"
+                                      "QPushButton: pressed{\n"
+                                      "    background_color: #330099\n"
+                                      "}\n"
+                                      "\n"
+                                      "*:hover{\n"
+                                      "            background: \'#4663AB\n"
+                                      "\';\n"
+                                      "        }")
         self.pushButton.setObjectName("pushButton")
-       
+
         self.currencyInput = QtWidgets.QLineEdit(self.centralwidget)
         self.currencyInput.setGeometry(QtCore.QRect(30, 520, 241, 71))
         font = QtGui.QFont()
@@ -90,9 +90,9 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.currencyInput.setFont(font)
         self.currencyInput.setStyleSheet("background-color: #3E6FE7;\n"
-"border: 2px solid #3E2FA7;\n"
-"border-radius: 22px;\n"
-"color: white;")
+                                         "border: 2px solid #3E2FA7;\n"
+                                         "border-radius: 22px;\n"
+                                         "color: white;")
         self.currencyInput.setText("")
         self.currencyInput.setAlignment(QtCore.Qt.AlignCenter)
         self.currencyInput.setObjectName("currencyInput")
@@ -106,9 +106,9 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.amountOutput.setFont(font)
         self.amountOutput.setStyleSheet("background-color: #3E6FE7;\n"
-"border: 2px solid #3E2FA7;\n"
-"border-radius: 22px;\n"
-"color: white;")
+                                        "border: 2px solid #3E2FA7;\n"
+                                        "border-radius: 22px;\n"
+                                        "color: white;")
         self.amountOutput.setText("")
         self.amountOutput.setAlignment(QtCore.Qt.AlignCenter)
         self.amountOutput.setObjectName("amountOutput")
@@ -122,9 +122,9 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.currencyOutput.setFont(font)
         self.currencyOutput.setStyleSheet("background-color: #3E6FE7;\n"
-"border: 2px solid #3E2FA7;\n"
-"border-radius: 22px;\n"
-"color: white;")
+                                          "border: 2px solid #3E2FA7;\n"
+                                          "border-radius: 22px;\n"
+                                          "color: white;")
         self.currencyOutput.setText("")
         self.currencyOutput.setAlignment(QtCore.Qt.AlignCenter)
         self.currencyOutput.setObjectName("currencyOutput")
@@ -135,7 +135,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Currency Converter by Oreh"))
+        MainWindow.setWindowTitle(_translate(
+            "MainWindow", "Currency Converter by Oreh"))
         self.label.setText(_translate("MainWindow", "Currency Converter"))
         self.pushButton.setText(_translate("MainWindow", "Click to Convert"))
         self.pushButton.setCursor(QCursor(QtCore.Qt.PointingHandCursor))
